@@ -77,7 +77,7 @@ const Login = () => {
                 <div className="flex flex-col w-[80%] 2xl:w-[60%] mx-auto mt-[38%] 2xl:mt-[33%] gap-24">
                     <div className="flex flex-col gap-2">
                         <div className="flex flex-col">
-                            <h1 className="text-2xl font-bold">Rwanda Cultural</h1>
+                            <h1 className="text-2xl font-bold">Umuraza Rwanda Cultural</h1>
                             <div className="flex flex-row gap-1 items-center">
                                 <h1 className="text-2xl font-bold">Village</h1>
                                 <h2 className="bg-darkBrown text-xs py-1 px-1.5 rounded-md text-white">
@@ -94,7 +94,7 @@ const Login = () => {
                 <div className="flex flex-col gap-7 mt-[30%] sm:mt-[15%] lg:mt-[10%] lg:gap-28">
                     <div className="flex flex-col lg:hidden md:gap-1">
                         <div className="flex flex-col mx-auto">
-                            <h1 className="text-base sm:text-xl font-bold">Rwanda Cultural</h1>
+                            <h1 className="text-base sm:text-xl font-bold">Umuraza Rwanda Cultural</h1>
                             <div className="flex flex-row gap-1 items-center">
                                 <h1 className="text-base sm:text-xl font-bold text-center">Village</h1>
                                 <h2 className="bg-darkBrown text-xs py-1 px-1.5 rounded-md text-white">

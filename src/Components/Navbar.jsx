@@ -41,7 +41,7 @@ const Navbar = (props) => {
             </button>
             <Link to={userInfoNotEmpty ? "/": "/login"}>
                 <div className="flex flex-col ms-2 md:me-24 text-sm text-black font-bold ">
-                    <h1>Rwanda Cultural</h1>
+                    <h1>Umuraza Rwanda Cultural</h1>
                     <div className="flex flex-row gap-1">
                         <h2>Village</h2>
                         <h2 className="bg-darkBrown text-xs py-1 px-1.5 rounded-md text-white">
