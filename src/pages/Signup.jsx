@@ -75,20 +75,25 @@ const Signup = () => {
         navigate("/", { replace: true });
       })
       .catch((err) => {
-        const error = {
-          statusCode: err.response.status,
-          message: err.response.data.message,
-        };
-
-        if (
-          error.statusCode === 422 ||
-          error.statusCode === 409 ||
-          error.statusCode === 401
-        ) {
-          setFormError(error.message);
+        if (err.response) {
+          const error = {
+            statusCode: err.response.status,
+            message: err.response.data.message,
+          };
+  
+          if (
+            error.statusCode === 422 ||
+            error.statusCode === 409 ||
+            error.statusCode === 401
+          ) {
+            setFormError(error.message);
+          } else {
+            setFormError("Unable to create an account! Try again later.");
+          }
         } else {
-          setFormError("Unable to create an account! Try again later.");
-        }
+            setFormError("Unable to create an account! Try again later.")
+            console.log(err.message);
+        }        
         setBtnLoading(false);
       });
   };
