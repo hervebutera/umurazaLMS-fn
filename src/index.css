@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-intro {
+  background-image: url('./assets/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: 200% -80px;
+  background-size: 400px;
+}
+
+@media (min-width: 1280px) {
+  .login-intro {
+    background-position: 190% -140px;
+    background-size: 500px;
+  }
+}
+@media (min-width: 1440px) {
+  .login-intro {
+    background-position: 180% -100px;
+  }
+}
+
