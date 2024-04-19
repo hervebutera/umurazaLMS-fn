@@ -1,4 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import adminsIcon from "../assets/multiple-users.png"
+import allClassesIcon from "../assets/classes.png"
+import myClassesIcon from "../assets/my-classes.png"
+import multipleUsersIcon from "../assets/multiple-users.png"
+import myProfileIcon from "../assets/profile-icon.png"
 
 export const navigationSlice = createSlice({
     name: "navigation",
@@ -10,43 +15,43 @@ export const navigationSlice = createSlice({
                 {
                     menuname: "All Classes",
                     path: "/",
-                    icon: "../src/assets/classes.png",
+                    icon: allClassesIcon,
                 },
                 {
                     menuname: "My Classes",
                     path: "/my-classes",
-                    icon: "../src/assets/my-classes.png",
+                    icon: myClassesIcon,
                 }
             ],
             adminSideMenu: [
                 {
                   menuname: "Learners",
                   path: "/",
-                  icon: "../src/assets/multiple-users.png",
+                  icon: multipleUsersIcon,
                 },
                 {
                   menuname: "Classes",
                   path: "/classes",
-                  icon: "../src/assets/classes.png",
+                  icon: allClassesIcon,
                 },
             ],
             userSettingsSideMenu: [
                 {
                   menuname: "My profile",
                   path: "/my-profile",
-                  icon: "../src/assets/profile-icon.png",
+                  icon: myProfileIcon,
                 },
             ],
             superAdminSettingsSideMenu: [
                 {
                   menuname: "Manage Admins",
                   path: "/admins",
-                  icon: "../src/assets/multiple-users.png",
+                  icon: adminsIcon,
                 },
                 {
                   menuname: "My profile",
                   path: "/my-profile",
-                  icon: "../src/assets/profile-icon.png",
+                  icon: myProfileIcon,
                 },
             ]
         },

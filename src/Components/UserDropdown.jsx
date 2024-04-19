@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { signout } from "../redux/userSlice";
 import { setCurrentMenu } from "../redux/pathNavigationSlice";
+import settingsIcon from "../assets/settings.png";
+import signOutIcon from "../assets/logout.png";
 
 const UserDropdown = (props) => {
   const userInfo = useSelector((state) => state.userInfo.userInfo);
@@ -80,7 +82,7 @@ const UserDropdown = (props) => {
               onClick={navigateSettings}
               >
                 <img
-                  src="../src/assets/settings.png"
+                  src={settingsIcon}
                   className="inline-block w-4 mr-2"
                 />
                 Settings
@@ -92,7 +94,7 @@ const UserDropdown = (props) => {
               role="menuitem"
             >
               <img
-                src="../src/assets/logout.png"
+                src={signOutIcon}
                 className="inline-block w-5 mr-1"
               />
               Sign out

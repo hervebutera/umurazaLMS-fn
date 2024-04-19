@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setCurrentMenu } from "../redux/pathNavigationSlice";
+import backIcon from "../assets/back.png";
 
 const Sidebar = (props) => {
   const location = useLocation();
@@ -36,7 +37,7 @@ const Sidebar = (props) => {
                   className="px-3 py-2 w-1/2 items-center hover:bg-gray-100 rounded-lg cursor-pointer"
                   onClick={navigateToHome}
               >
-                <img src="../src/assets/back.png" className="inline-block w-5 mr-3" />
+                <img src={backIcon} className="inline-block w-5 mr-3" />
                 Home
             </div>
         )}

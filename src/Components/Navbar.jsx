@@ -2,6 +2,7 @@ import UserDropdown from "./UserDropdown";
 import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import userAvatar from "../assets/user_avatar.png"
 
 const Navbar = (props) => {
   const userImageRef = useRef();
@@ -77,7 +78,7 @@ const Navbar = (props) => {
                   <span className="sr-only">{"Open user menu"}</span>
                   <img
                     className="w-8 h-8 rounded-full"
-                    src={userInfo.profileImageUrl || "../src/assets/user_avatar.png"}
+                    src={userInfo.profileImageUrl || userAvatar}
                     alt="user photo"
                   />
                 </button>
